@@ -9,19 +9,114 @@
     <title>Yoga In India</title>
 </head>
 
-<body bgcolor="pink" text="purple">
+<body bgcolor="white" text="indianred">
 
     <table width="1000" align="center" height="50">
-        <td><a href="index.html">Home</a></td>
-        <td><a href="about.html">About us</a></td>
-        <td><a href="gallery.html">Gallery</a></td>
-        <td><a href="courses.html">Courses</a></td>
-        <td><a href="schedule.html">Our Schedule</a></td>
-        <td><a href="register.html">Register With Us</a></td>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="about.html">About us</a></th>
+        <th><a href="courses.html">Courses</a></th>
+        <th><a href="schedule.html">Our Schedule</a></th>
+        <th><a href="gallery.html">Gallery</a></th>
     </table>
 
+    <table align="center">
+        <tr height="100">
+            <td><img src="images/phone-icon-8331594.jpg"  height="50"></a> </td>
+            <td><h2>Call us</h2></td>
+        </tr>
+        </table>
+        <table align="center">
+            <tr height="50">
+                <td><img src="images/70-701740_child-boy-comments-free-boy-icon-png.png"  height="30"></a> </td>
+                <td><h4>0987654321</h4></td>
+                <td><img src="images/817-8179634_woman-icon-png-me-icon-png-transparent.png"  height="30"></a> </td>
+                <td><h4>1234567890</h4></td>
+            </tr>
+            </table>
+
     
-    <h1>Contact</h1>
-    </body>
+
+    <table align="center">
+        <tr height="100">
+            <td>  <img src="images/istockphoto-1266085233-170667a.jpg"  height="50"></a> </td>
+            <td><h2>Join our mailing list</h2></td>
+        </tr>
+        </table>
+   
+        <table align="center">
+            <tr height="50">
+                <td><form method="post" action="//submit.form" onSubmit="return validateForm();">
+                    <div style="max-width: 400px;">
+                    </div>
+                    <div style="padding-bottom: 18px;font-size : 24px;">Subscription form</div>
+                    <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+                    <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
+                    <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+                    </div>
+                    <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<span style="color: red;"> *</span><br/>
+                    <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+                    </div>
+                    </div><div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br/>
+                    <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
+                    </div>
+                    <div style="padding-bottom: 18px;">Comments<br/>
+                    <textarea id="data_5" false name="data_5" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+                    </div>
+                    <div style="padding-bottom: 18px;"><br/>
+                    <span><input type="checkbox" id="data_6_0" name="data_6" value="I agree to Terms of Service and Privacy Policy"/> I agree to Terms of Service and Privacy Policy</span><br/>
+                    </div>
+                    <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Subscribe" type="submit"/></div>
+                    <div>
+                    </div>
+                    </form></td>
+    
+
         
+        <script type="text/javascript">
+        function validateForm() {
+        if (isEmpty(document.getElementById('data_2').value.trim())) {
+        alert('First name is required!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_3').value.trim())) {
+        alert('Last name is required!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_4').value.trim())) {
+        alert('Email is required!');
+        return false;
+        }
+        if (!validateEmail(document.getElementById('data_4').value.trim())) {
+        alert('Email must be a valid email address!');
+        return false;
+        }
+        return true;
+        }
+        function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+        function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+        }
+        </script>
+ 
+ 
+ 
+    <table align="center">
+        <tr height="100">
+            <td> <a href="https://goo.gl/maps/Xrt1bUHs1abWJtZB6" target="_blank"> <img src="images/4781517.png" alt="NIFT LOCATION" height="50"></a> </td>
+            <td><h2>Our location</h2></td>
+        </tr>
+        </table>
+    <table align="center">
+        <tr height="50">
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.461073072412!2d77.20588211549416!3d28.555914294294414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce26cfce1f527%3A0x84e28029a35df68!2sNIFT%20Campus%20Circular%20Rd%2C%20Hauz%20Khas%2C%20New%20Delhi%2C%20Delhi%20110016!5e0!3m2!1sen!2sin!4v1665647791194!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            </tr>
+            </table>
+
+
+    
+<br>
+
+<br></br> 
+</body>
    </html>
